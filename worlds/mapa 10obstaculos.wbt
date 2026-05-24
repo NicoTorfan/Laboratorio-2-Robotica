@@ -1,0 +1,298 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+  info [
+    "Copyright (C) 2006 Laboratory of Intelligent Systems (LIS), EPFL"
+    "Thanks to jean-christophe.zufferey@epfl.ch"
+  ]
+}
+Viewpoint {
+  orientation -0.3958975893692216 -0.5465885821911208 0.737906512066359 4.45759017235787
+  position -0.015948745098139816 1.1370444122811372 1.958203523123701
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 0 1 -1.5708
+  floorSize 0.9 0.9
+  floorTileSize 0.9 0.9
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/worlds/textures/floor.png"
+      ]
+    }
+    roughness 0.2
+    metalness 0
+  }
+  wallHeight 0.05
+}
+DEF _OBSTACLE4 Solid {
+  translation -0.309589 -0.202257 0.025
+  rotation 0 0 -1 1.6757556132800113
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.501961 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.08 0.08 0.05
+      }
+    }
+  ]
+  name "pink box(1)"
+  boundingObject USE BOX2
+}
+Solid {
+  translation 0.0825066 0.344117 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box(4)"
+  immersionProperties [
+    ImmersionProperties {
+    }
+  ]
+  boundingObject USE BOX1
+}
+DEF OBSTACLE3 Solid {
+  translation -0.311859 0.0235863 0.025
+  rotation 0 0 1 0.11253530717958465
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.05 0.2 0.05
+      }
+    }
+  ]
+  name "gray box(4)"
+  boundingObject USE BOX3
+}
+DEF OBSTACLE3 Solid {
+  translation -0.276332 0.250359 0.025
+  rotation 0 0 -1 0.411066
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.05 0.2 0.05
+      }
+    }
+  ]
+  name "gray box(3)"
+  boundingObject USE BOX3
+}
+DEF OBSTACLE1 Solid {
+  translation -0.0259743 -0.0835003 0.025
+  rotation 0.8944271909999159 0 0.4472135954999579 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box(3)"
+  boundingObject USE BOX1
+}
+Solid {
+  translation -0.170312 0.106182 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box(2)"
+  immersionProperties [
+    ImmersionProperties {
+    }
+  ]
+  boundingObject USE BOX1
+}
+Solid {
+  translation -0.0991554 0.277486 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box(5)"
+  immersionProperties [
+    ImmersionProperties {
+    }
+  ]
+  boundingObject USE BOX1
+}
+DEF OBSTACLE1 Solid {
+  translation 0.182088 -0.196005 0.025
+  rotation 0.8944271909999159 0 0.4472135954999579 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box"
+  boundingObject USE BOX1
+}
+Solid {
+  translation 0.0655033 0.0920604 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box(1)"
+  immersionProperties [
+    ImmersionProperties {
+    }
+  ]
+  boundingObject USE BOX1
+}
+DEF _OBSTACLE4 Solid {
+  translation -0.0890099 -0.24826 0.025
+  rotation 0 0 1 -1.6757556132800113
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.501961 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.08 0.08 0.05
+      }
+    }
+  ]
+  name "pink box"
+  boundingObject USE BOX2
+}
+DEF OBSTACLE3 Solid {
+  translation 0.346625 -0.213961 0.025
+  rotation 0 0 1 -0.6728653071795865
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.05 0.2 0.05
+      }
+    }
+  ]
+  name "gray box"
+  boundingObject USE BOX3
+}
+DEF OBSTACLE_5 Solid {
+  translation 0.185162 0.112854 -2.44249e-15
+  rotation 0 0 1 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.05 0.2 0.05
+      }
+    }
+  ]
+  name "gray box(1)"
+  boundingObject USE BOX3
+}
+DEF OBSTACLE_5 Solid {
+  translation 0.417979 0.232012 0
+  rotation 0 0 1 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.05 0.2 0.05
+      }
+    }
+  ]
+  name "gray box(2)"
+  boundingObject USE BOX3
+}
+DEF EPUCK E-puck {
+  hidden position_0_0 423.02848704525695
+  hidden position_0_1 296.8058792152902
+  hidden linearVelocity_0 -0.06662724915991347 -0.10603955862250394 0.00013512868806218629
+  hidden angularVelocity_0 -0.006656059544301034 -0.00243427458986141 0.005104511106543308
+  hidden rotation_1 0 -1 0 0.42216280881685253
+  hidden rotation_2 0 1 0 0.7086998209045697
+  translation 0.34950183718491884 0.3327634513168398 -7.901325113838023e-05
+  rotation 0.0006863883552229694 -0.001095816077019822 0.9999991640287261 -2.1333970999695007
+  controller "kalman_controller"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}

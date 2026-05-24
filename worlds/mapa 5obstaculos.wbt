@@ -1,0 +1,149 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+  info [
+    "Copyright (C) 2006 Laboratory of Intelligent Systems (LIS), EPFL"
+    "Thanks to jean-christophe.zufferey@epfl.ch"
+  ]
+}
+Viewpoint {
+  orientation 0.259370055827465 0.5671679919728613 -0.7816953645900239 0.8434773831964993
+  position -0.9798802499312789 0.6741284923093562 0.7780791965710112
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 0 1 -1.5708
+  floorSize 0.9 0.9
+  floorTileSize 0.9 0.9
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/worlds/textures/floor.png"
+      ]
+    }
+    roughness 0.2
+    metalness 0
+  }
+  wallHeight 0.05
+}
+DEF OBSTACLE1 Solid {
+  translation 0.192401 -0.0871577 0.025
+  rotation 0.8944271909999159 0 0.4472135954999579 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box"
+  boundingObject USE BOX1
+}
+Solid {
+  translation 0.1 0.3 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.1 0.3
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX1 Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "red box(1)"
+  immersionProperties [
+    ImmersionProperties {
+    }
+  ]
+  boundingObject USE BOX1
+}
+DEF _OBSTACLE4 Solid {
+  translation 0.1 -0.21 0.025
+  rotation 0 0 1 -1.6757556132800113
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.501961 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX2 Box {
+        size 0.08 0.08 0.05
+      }
+    }
+  ]
+  name "pink box"
+  boundingObject USE BOX2
+}
+DEF OBSTACLE3 Solid {
+  translation -0.250604 -0.31759 0.025
+  rotation 0 0 1 1.4215290795404023
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.05 0.2 0.05
+      }
+    }
+  ]
+  name "gray box"
+  boundingObject USE BOX3
+}
+DEF OBSTACLE_5 Solid {
+  translation 0.3 0.24 0
+  rotation 0 0 1 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.501961 0.501961 0.501961
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF BOX3 Box {
+        size 0.05 0.2 0.05
+      }
+    }
+  ]
+  name "gray box(1)"
+  boundingObject USE BOX3
+}
+DEF EPUCK E-puck {
+  hidden position_0_0 0.6005891010141278
+  hidden position_0_1 0.602397014539947
+  hidden linearVelocity_0 -2.580790219758392e-06 -1.9433430040294384e-07 -9.287541142081445e-09
+  hidden angularVelocity_0 -1.3933948211888803e-06 7.638145177269623e-08 6.980660083729706e-05
+  hidden rotation_1 0 -1 0 5.880965377647414
+  hidden linearVelocity_1 -2.5790327499215175e-06 1.404224066448023e-06 1.1998119924250344e-07
+  hidden angularVelocity_1 1.2497184430667172 -0.0001288046826877825 6.896679105175918e-05
+  hidden rotation_2 0 -1 0 6.258987674989224
+  hidden linearVelocity_2 -2.5844309069080984e-06 -2.224388284943757e-06 1.2433198386396807e-07
+  hidden angularVelocity_2 1.2559984430454474 -0.00012937128755458453 6.89436406650346e-05
+  translation -0.04030620633797643 -0.4132272504401683 -4.183433066586896e-05
+  rotation -0.0020325047475536107 -0.0020314050992210884 -0.9999958711503635 1.5709024621716117
+  controller "kalman_controller"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
