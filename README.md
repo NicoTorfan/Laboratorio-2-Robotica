@@ -56,13 +56,13 @@ Cuando cualquiera de los sensores frontales registra un valor inferior al umbral
 
 | Figura 1: Medición vs Kalman | Figura 2: Comparación de Filtrado |
 | :---: | :---: |
-| ![Medición vs Kalman 5 obs](multimedia/Figure_1(5obs).png) | ![Comparación de Filtrado 5 obs](multimedia/Figure_2(5obs).png) |
+| ![Medición vs Kalman 5 obs](Multimedia/Figure_1(5obs).png) | ![Comparación de Filtrado 5 obs](Multimedia/Figure_2(5obs).png) |
 
 ### Escenario 10 obstáculos
 
 | Figura 3: Medición vs Kalman | Figura 4: Comparación de Filtrado |
 | :---: | :---: |
-| ![Medición vs Kalman 10 obs](multimedia/Figure_1(10obs).png) | ![Comparación de Filtrado 10 obs](multimedia/Figure_2(10obs).png) |
+| ![Medición vs Kalman 10 obs](Multimedia/Figure_1(10obs).png) | ![Comparación de Filtrado 10 obs](Multimedia/Figure_2(10obs).png) |
 
 ## Resultados Obtenidos en los Escenarios de Prueba
 [Describe aquí brevemente qué pasó al correr el robot. Ejemplo: El robot logró navegar exitosamente por la arena configurada en el archivo .wbt, evadiendo los obstáculos frontales de manera fluida y sin colisiones. Las mediciones laterales demostraron un comportamiento estable mientras el robot se desplazaba paralelo a los muros.]
